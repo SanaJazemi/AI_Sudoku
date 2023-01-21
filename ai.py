@@ -62,7 +62,7 @@ class AI:
         out_s += '{\n'
         for i, row in enumerate(results):
             if i==0 or i==9: 
-                out_s += '  ['+'\n'
+                out_s += '"sudoku":['+'\n'
             out_s += '      ['
             if i==8:
                 out_s += ", ".join([",".join(notzero(s) for s in list(row)[3*(k-1):3*k]) for k in range(1,4)]) + "]\n"
